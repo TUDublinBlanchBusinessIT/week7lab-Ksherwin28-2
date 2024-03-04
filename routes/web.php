@@ -24,3 +24,7 @@ Route::resource('scorders', App\Http\Controllers\scorderController::class);
 Route::resource('orderdetails', App\Http\Controllers\orderdetailController::class);
 
 Route::get('products/displaygrid', 'App\Http\Controllers\productController@displaygrid')->name('products.displaygrid');
+
+Route::get('products/additem/{id}', 'App\Http\Controllers\productController@additem')->name('products.additem');
+
+Route::get('products/emptycart', 'App\Http\Controllers\productController@emptycart')->name('products.emptycart');
